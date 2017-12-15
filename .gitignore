@@ -1,4 +1,9 @@
-node_modules/
+public/bundle.js
+public/bundle.js.map
+public/styles.css
+public/styles.css.map
 
 expensify-app.sublime-project
 expensify-app.sublime-workspace
+
+node_modules/
