@@ -6,7 +6,7 @@ import selectExpensesTotal from '../../selectors/expenses-total';
 
 test('can display total of one expense', () => {
   const wrapper = shallow(<ExpensesSummary
-    expenses={[expenses[0]]}
+    expenseCount={1}
     expensesTotal={selectExpensesTotal([expenses[0]])}
   />);
   expect(wrapper).toMatchSnapshot();
@@ -14,7 +14,7 @@ test('can display total of one expense', () => {
 
 test('can display total of multiple expenses', () => {
   const wrapper = shallow(<ExpensesSummary
-    expenses={expenses}
+    expenseCount={expenses.length}
     expensesTotal={selectExpensesTotal(expenses)}
   />);
   expect(wrapper).toMatchSnapshot();
